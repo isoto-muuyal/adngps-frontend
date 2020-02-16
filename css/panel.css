@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto;font-family: 'Signika', sans-serif;font-size:100%;background:url(../img/bg_map.jpg); background-size:100%; background-attachment:fixed; }
+h1 {color:#ccc; font-size:400%; font-weight:normal; background:#f4f4f4; margin:0; padding-top:2%; padding-bottom:2%; text-align:center;}
+h2 {color:#ccc; margin-top:25px; width:auto; float:left; font-size:200%;}
+
+#cont_cabezal {
+	width:98%; 
+	margin:0 auto; 
+        
+	height:44px; 
+	padding-left:1%; 
+	padding-right:1%; 
+	overflow:hidden; 
+	position:relative; 
+	padding-top:0px; 
+	padding-bottom:0px;
+	z-index:10;
+	background:#000;
+border-bottom:solid thin #111;
+	}
+	
+	#CBTI_container {
+		width:300px; height:auto; overflow:auto; visibility:visible; background:#fff; position:fixed; top:45px; z-index:2000; right:0.2%; box-shadow:0px 0px 4px #999; opacity:1;
+padding:3px 3px 3px 3px; font-size:14px; color:#fff;
+		}
+		
+	#CBTI_container_interactions {
+		width:230px; height:500px; overflow:auto; visibility:visible; background:#fff; position:fixed; top:51px; z-index:2000; right:360px; box-shadow:0px 0px 4px #999; opacity:1;
+padding:3px 7px 3px 7px; font-size:10px; color:#fff;
+		}
+			#icono_abre_menu {float:left; width:70px; margin-right:0px; cursor:pointer; opacity:0.7; margin-top:7px;}
+			#icono_abre_menu:hover {opacity:1;}
+			.contenedor_menu_general {width:60%; height:30px;}
+			
+			#menu_general {position:fixed;width:16%; height:100%; background:#000; padding-left:1.2%; padding-right:1.2%; z-index:1000; overflow:hidden; opacity:0; margin-left:-100%; }
+			
+			.cerrar_menu {width:13%; float:right; margin-right:-1%; margin-top:6%; cursor:pointer; opacity:0.7;}
+			.cerrar_menu:hover {opacity:1;}
+			
+			.btn_menu_general {float:left; width:100%;}
+			.btn_menu_general_int {width:100%; padding-top:2%; padding-bottom:2%; background:none; border:none; border-bottom:solid thin #444;
+			text-align:left; color:#999; cursor:pointer;}
+			
+			.btn_menu_general_int:hover {color:#fff; text-decoration:underline;}
+			
+			#user_session_containers {width:auto; height:auto; float:left;color:#83b5d5; margin-top:14px;}
+			#ico_herramientas_containers {width:40px; height:40px; float:right;}
+			
+			#cont_funciones_herramientas {width:220px; height:auto; position:absolute; right:1%; margin-top:-250px; padding:1%;
+			z-index:9; opacity:0;
+			background:#000;
+}
+			
+			.botones_interior_herramientas {color:#ccc; text-decoration:none; display:block; padding:4%; border:none; cursor:pointer;
+			background:#000;
+}
+			.botones_interior_herramientas:hover {color:#fff; text-decoration:none; display:block; padding:4%;}
+
+	
+	
+#contenedor_geral {width:100%; margin:0 auto; height:auto; overflow:hidden; padding-bottom:2%; color:#999; padding-left:0%; padding-right:0%; position:relative;  }
+
+
+
+#contenedor_formulario_modelos {width:90%; height:80%; background:#f1f1f1; margin:0 auto; border:solid thin #ccc; padding:2%; overflow:hidden;}
+#contenedor_formulario_empresas {width:86%; height:auto; background:#f1f1f1; margin:0 auto; border:solid thin #ccc; padding:2%; overflow:hidden;}
+
+.h1_left {text-align:left;}
+h3 {display:block; width:100%; text-align:left; font-size:130%; margin:0;}
+
+#contenedores_label {width:30%; float:left; margin-right:3%;}
+#contenedores_label2 {width:17%; height:120px; float:left; margin-right:3%; display:block;}
+#contenedores_label_pequenio {width:8%; float:left; margin-right:3%;}
+.campos {width:100%; padding-left:3%; padding-top:5%; padding-bottom:5%; border:solid thin #ccc;}
+.campos_pequenios {width:100%; padding-left:3%; padding-top:5%; padding-bottom:5%; border:solid thin #ccc;}
+
+.campos_p_recorrido_filtro {border:solid thin #ccc; width:90px; padding-top:2%; padding-bottom:2%;  font-size:90%;}
+
+#contenedor_btn_formulario {width:100%; diaplay:block; float:left;}
+.btn_formularios {width:20%; display:block;  padding-left:5%; padding-right:5%; padding-top:1.5%; padding-bottom:1.5%; margin-top:2%; margin-bottom:5%;  }
+
+.notificacion {color:#06C; float:left; display:block; width:100%; ;}
+
+#resultados_consultas {display:block; width:100%; overflow:hidden; border-bottom:solid thin #ccc; padding-top:2%; padding-bottom:2%;}
+
+.datos {float:left; margin-right:2%; display:block; width:18%; }
+.datos2 {float:left; margin-right:2%; display:block; width:8%; overflow:hidden; }
+.datos3 {float:left; margin-right:2%; display:block; width:7%; overflow:hidden; }
+.datos4 {float:left; margin-right:2%; display:block; width:9%; overflow:hidden; }
+
+.eliminacion {padding-left:1.5%; padding-right:1.5%; padding-top:0.3%; padding-bottom:0.3%; background:#F00; color:#fff; border:none; border-radius:3px; cursor:pointer;}
+.eliminacion:hover {background:#000;}
+
+.negritas {font-weight:bold;}
+.rojas {color:#F00;}
+
+#funcion_opacidad {width:100%; height:100%; position:fixed; background:url(../img/mascara_opacidad.png); top:0; left:0; z-index:10000;}
+#contenedor_confirmacion {width:14%; height:auto; padding:2%3%2%3%; margin:0 auto; background:#f4f4f4; text-align:center; border-radius:5px; overflow:hidden; margin-top:15%;}
+
+.confirma_eliminacion {float:left; width:40%; margin-left:6.5%; border-radius:3px; background:#999; color:#fff; border:none; padding-top:2%; padding-bottom:2%;}
+.confirma_eliminacion:hover {background:#000; color:#ccc; cursor:pointer;}
+
+.si_activos {display:block; width:20%;    height:14px; background:#393; border-radius:20px; margin-left:40%;}
+.no_activos {display:block; width:20%; height:14px; background:#F00; border-radius:20px; margin-left:25%;}
+
+
+.mostrar_seguimiento {width:auto; height:auto; background:#578900; color:#fff; font-size:9px; position:absolute; top:70px; 
+right:10px; padding-top:11px; padding-bottom:11px; padding-left:14px; padding-right:14px;cursor:pointer; font-weight:bold;}
+
+
+
+.ocultar_seguimiento {width:auto; height:auto; background:#c91e42; color:#fff; font-size:9px; position:absolute; top:-30px; 
+right:15px; padding-top:11px; padding-bottom:11px; padding-left:14px; padding-right:14px; cursor:pointer;font-weight:bold;}
+
+
+
+.ventana_seguimiento_recorridos {width:0px; height:0%; overflow:auto; visibility:visible; background:#fff; position:fixed; top:101px; z-index:2000; right:0%; box-shadow:0px 0px 4px #999; opacity:0;
+padding:3px 3px 3px 3px; font-size:10px; color:#fff;}
+
+.derechos {display:block; width:100%; text-align:right; font-size:70%; color:#ccc;}
+
+
+.btn_ubicacion_recorrido {
+	
+	float:left; 
+	width:100%; 
+	border:none; 
+	background:#999; 
+	color:#fff; 
+	-webkit-border-radius:2px; 
+	border-radius:2px;  
+	cursor:pointer;
+	
+}
+
+.btn_ubicacion_recorrido:hover {background:#000; color:#fff;}
+
+
+/*INTERACCIONES*/
+
+.form_interacciones {color:#000;}
+
+.interacciones_btn{background:#f1f1f1; color:#039; border:none; padding-top:10px; padding-bottom:10px; width:100%;
+-webkit-transition-duration:.1s;transition-duration:.1s;}
+.interacciones_btn:hover{background:#000; color:#ccc; -webkit-transition-duration:.3s;transition-duration:.3s; cursor:pointer;}
+
+/*INTERACCIONES*/
+
+
+/*GEOCERCAS*/
+.tr_select {background:#fff;}
+.tr_select:hover {background:#f8f8f8;}
+
+.geo_btn{background:#999; color:#fff; border:none; padding-top:3px; padding-bottom:3px; width:100%;
+-webkit-transition-duration:.1s;transition-duration:.1s;}
+.geo_btn:hover{background:#000; color:#ccc; -webkit-transition-duration:.3s;transition-duration:.3s; cursor:pointer;}
+
+.geo_btn_delete{background:red; color:#fff; border:none; padding-top:5px; padding-bottom:5px; width:100%;
+-webkit-transition-duration:.1s;transition-duration:.1s;}
+.geo_btn_delete:hover{background:#000; color:red; border:none; padding-top:5px; padding-bottom:5px; width:100%;
+-webkit-transition-duration:.1s;transition-duration:.1s;cursor:pointer;}
+
+.btn_geo_edit {
+	
+	width:100%;
+	height:30px;	
+	border:none; 
+	color:#fff; 
+	background:#fc7474; 
+	cursor:pointer;
+	font-size:9px;
+   }
+.btn_geo_edit:hover {background:#b90000; color:#fff;}
+
+.btn_geo_edit_green {
+	
+	width:100%;
+	height:30px;	
+	border:none; 
+	color:#fff; 
+	background:#777; 
+	cursor:pointer;
+	font-size:9px;
+   }
+   
+.btn_geo_edit_green:hover {background:#000; color:#fff;}
+
+.btn_configuracion_global {width:100%;padding-left:4%;margin-top:5px; text-align:left; background:#f8f8f8; color:#999; border:none; border-bottom:solid thin #f4f4f4; font-size:10px; height:30px;}
+.btn_configuracion_global:hover {background:#f4f4f4; color:#000; cursor:pointer; font-weight:bold;}	
+
+.select_asigna_geocerca {width:100%; background:none; border-bottom:#e2e2e2; padding-top:0.5%; padding-bottom:0.5%; margin-bottom:1%; font-size:14px;}
+
+.select_asigna_geocerca:hover {cursor:pointer; background:#fff;}
+
+.contiene_funciones_seleccion {width:98%; height:auto; padding-top:1%; padding-bottom:1%; padding-left:1%; padding-right:1%; background:#e2e2e2; overflow:hidden; margin-bottom:10px;}
+
+
+
+.select_geocerca {width:auto; float:right;}
+
+.marcar_todo {font-size:12px; }
+
+.btn_guardar_geocerca_asignacion {background:#000; color:#fff; border:none; width:20%; padding-top:1%; padding-bottom:1%;}
+
+.btn_actualiza_estatus {background:#999; border:none;color:#fff; padding-bottom:1%; cursor:pointer;}
+.btn_actualiza_estatus:hover {background:#000; color:#999;}
+
+.btn_actualiza_estatus_delete {background:#f3a3a3; border:none;color:#fff; padding-bottom:1%; cursor:pointer;}
+.btn_actualiza_estatus_delete:hover {background:#dd2e2e; color:#fff;}
+
+.btn_select_vehicle_for_geo_center {width:88%; background:#f1f1f1; border:none; color:red; font-size:10px; height:25px;}
+.btn_select_vehicle_for_geo_center:hover {background:#000; color:#999; cursor:pointer;}
+
+
+/*GEOCERCAS*/
+
+
+/*INVENTARIOS*/
+.miTABLE {width:100%; padding:0.1%; background:#fff;}
+.miTR {background:#f1f1f1; height:30px;}
+.miTDtitle {background:#EFEEE4; font-size:14px; color:#000; font-weight:bold;}
+.miTD {background:#f1f1f1; font-size:14px;}
+.sub_header_int {background:#999; display:block; width:100%; color:#FFF; text-align:center;}
+/*INVENTARIOS*/
+
+
+
+
+
+
+
+
+			
