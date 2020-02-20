@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?-rdnm34');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix-rdnm34') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff?-rdnm34') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf?-rdnm34') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg?-rdnm34#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+div.cs-skin-underline {
+	background: transparent;
+	font-size: 12px;
+	max-width: 400px;
+}
+
+
+
+.cs-skin-underline > span {
+	padding: 0;
+	border-bottom: 1px solid #000;
+	border-color: inherit;
+	font-weight: bold;
+}
+
+.cs-skin-underline > span::after {
+	font-family: 'icomoon';
+	content: '\e003';
+	right: 0.25em;
+	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,45deg);
+	transform: translate3d(0,-50%,0) rotate3d(0,0,1,45deg);
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.cs-skin-underline.cs-active > span::after {
+	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+	transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+}
+
+.cs-skin-underline .cs-options {
+	background: #151515;
+	opacity: 0;
+	height:200px;
+	overflow:auto;
+	visibility:visible;
+	-webkit-transition: opacity 0.3s 0.4s, visibility 1s 1s;
+	transition: opacity .1s .1s, visibility .1s .1s;
+}
+
+.cs-skin-underline.cs-active .cs-options {
+	opacity: 1;
+	-webkit-transition: opacity 0s;
+	transition: opacity 0s;
+}
+
+.cs-skin-underline ul span {
+	position: relative;
+	font-size: 100%;
+	font-weight: 700;
+	letter-spacing: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left:10px;
+	opacity: 0;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+	-webkit-transition: opacity 0s, -webkit-transform 0s;
+	transition: opacity 0s, transform 0s;
+}
+
+.cs-select ul span::after {
+	content: '';
+	opacity: 0;
+}
+
+.cs-select .cs-selected span::after {
+	font-family: 'icomoon';
+	content: '\e010';
+	opacity: 1;
+	-webkit-transition: opacity 0s 0s;
+	transition: opacity 0s 0s;
+}
+
+.cs-skin-underline ul span::before {
+	content: '';
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background-color: #151515; /*AQUI MODIFICAMOS LO DEL BORDE DE LAS OPCIONES DEL SELECT*/
+	-webkit-transform: translate3d(200%,0,0);
+	transform: translate3d(200%,0,0);
+	-webkit-transition: -webkit-transform 0.1s;
+	transition: transform 0.1s;
+}
+
+.cs-skin-underline.cs-active ul span,
+.cs-skin-underline.cs-active ul span::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+.cs-skin-underline .cs-options li span:hover,
+.cs-skin-underline .cs-options li.cs-focus span,
+.cs-skin-underline li.cs-selected span {
+	color: #fff;
+	background: transparent;
+	text-decoration:underline;
+}
